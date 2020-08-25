@@ -1,7 +1,18 @@
 import React from "react";
+import Sidebar from "./Components/Sidebar";
+import Topbar from "./Components/Topbar";
+import MainSection from "./Components/MainSection";
 
 function App() {
-  return <h1 className="text-6xl">React Tailwind css</h1>;
+  return (
+    <>
+      <Sidebar />
+      <div className="container w-full">
+        <Topbar />
+        <MainSection />
+      </div>
+    </>
+  );
 }
 
 export default App;
